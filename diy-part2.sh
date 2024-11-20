@@ -9,16 +9,3 @@
 # This is free software, licensed under the MIT License.
 # See /LICENSE for more information.
 #
-
-# Modify default IP
-#sed -i 's/192.168.1.1/192.168.100.1/g' package/base-files/files/bin/config_generate
-
-# Modify default theme
-#sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
-
-# Modify hostname
-#sed -i 's/OpenWrt/X-WRT/g' package/base-files/files/bin/config_generate
-
-## golang 为 1.23.x
-rm -rf feeds/packages/lang/golang
-git clone https://github.com/sbwml/packages_lang_golang -b 23.x feeds/packages/lang/golang
